@@ -1,0 +1,32 @@
+{
+  "name": "spa_tp",
+  "version": "0.0.1",
+  "description": "Single Page Application",
+  "main": "index.js",
+  "dependencies": {
+    "mapbox-gl": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fenikz31/SPA_TP.git"
+  },
+  "keywords": [
+    "single",
+    "page",
+    "application",
+    "SPA",
+    "F4",
+    "fantastic",
+    "four"
+  ],
+  "author": "fenikz31",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fenikz31/SPA_TP/issues"
+  },
+  "homepage": "https://github.com/Fenikz31/SPA_TP#readme"
+}

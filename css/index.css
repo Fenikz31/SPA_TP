@@ -1,0 +1,159 @@
+@import url(//db.onlinewebfonts.com/c/d2b4f0f0ac2826ec27a12344a10986cc?family=FANTASTIC+FOUR+MOVIE+SLANT);
+
+@font-face {font-family: "FANTASTIC FOUR";
+    src: url("//db.onlinewebfonts.com/t/d2b4f0f0ac2826ec27a12344a10986cc.eot");
+    src: url("//db.onlinewebfonts.com/t/d2b4f0f0ac2826ec27a12344a10986cc.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d2b4f0f0ac2826ec27a12344a10986cc.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d2b4f0f0ac2826ec27a12344a10986cc.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d2b4f0f0ac2826ec27a12344a10986cc.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d2b4f0f0ac2826ec27a12344a10986cc.svg#FANTASTIC FOUR MOVIE SLANT") format("svg");
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background: url(/assets/img/fantastic-four-wallpape.jpg) no-repeat top fixed;
+    background-size: cover;
+}
+
+.content {
+    margin: auto;
+}
+
+.banner, .team {
+    display: flex;
+    align-items: center;
+}
+
+.imgBanner {
+    display: block;
+    width: 100%;
+    max-height: 150px;
+    align-content: center;
+    box-shadow: -3px -20px 18px 14px black;
+}
+
+.header {
+    background-color: rgb(28, 185, 247);
+    padding: 25px 0 25px 0;    
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 25px;
+    box-shadow: 11px -6px 13px 0px black;
+    letter-spacing: 3.5px;
+    border: groove silver 5px;
+
+}
+
+.introduction {
+    text-align: center;
+    color: white;
+    font-family: FANTASTIC FOUR;
+    font-stretch: expanded;
+    font-size-adjust: inherit;
+    font-size: 35px;
+    text-shadow: 6px 4px 10px black;
+}
+
+.video {
+    display: block;
+    position: relative;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+h3.name {
+    color: black;
+    font-family: FANTASTIC FOUR;
+    font-stretch: extra-expanded;
+    font-size-adjust: inherit;
+    font-size: 35px;
+    text-shadow: 0px 4px 20px grey;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+.mug-shot, .teampic {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mug-shot {
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    border: solid groove 4px silver;
+}
+
+img{
+    width: 300px;
+    height: 450px; 
+}
+
+img.zoom {
+    transition: transform .2s;
+}
+
+img.zoom:hover {
+    transform: scale(1.2);
+}
+
+p.bio {
+    display: block;
+    border: 10px;
+    margin: 20px auto;
+    width: 340px;
+}
+
+#text{
+    padding: 10px;
+    z-index: -2;
+}
+
+.rReeds {
+    flex: 1 1 0;
+    background-color: rgb(156, 156, 156);
+    border: ridge 15px silver;
+    
+}
+
+.sStorm {
+    flex: 1 1 0;
+    background-color: rgb(77, 124, 255);
+    border: ridge 15px silver;
+}
+
+.jStorm {
+    flex: 1 1 0;
+    background-color: rgb(235, 91, 34);
+    border: ridge 15px silver;
+}
+
+.bGrimm {
+    flex: 1 1 0;
+    background-color: rgb(129, 73, 0);
+    border: ridge 15px silver;
+}
+
+.team {
+    display: flex;
+    background-color: blanchedalmond;
+    margin-top: 30 px;
+}
+
+div.teambio {
+    flex: 1 1 0;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+img.teampic {
+    flex: 1 1 0;
+    min-width: 900px;
+}
