@@ -10,14 +10,16 @@
 }
 
 html {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: url(/assets/img/fantastic-four-wallpape.jpg) no-repeat top fixed;
     background-size: cover;
+    opacity: .96;
 }
 
 .content {
-    margin: auto;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .banner, .team {
@@ -26,8 +28,8 @@ html {
 }
 
 .imgBanner {
-    display: block;
-    width: 100%;
+    display: flex;
+    margin: 0 auto;
     max-height: 150px;
     align-content: center;
     box-shadow: -3px -20px 18px 14px black;
@@ -35,10 +37,8 @@ html {
 
 .header {
     background-color: rgb(28, 185, 247);
-    padding: 25px 0 25px 0;    
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 10px;
+    padding: 25px 0;    
+    /* margin: 0 auto; */
     border-radius: 25px;
     box-shadow: 11px -6px 13px 0px black;
     letter-spacing: 3.5px;
@@ -52,7 +52,7 @@ html {
     font-family: FANTASTIC FOUR;
     font-stretch: expanded;
     font-size-adjust: inherit;
-    font-size: 35px;
+    font-size: 20px;
     text-shadow: 6px 4px 10px black;
 }
 
@@ -90,13 +90,10 @@ h3.name {
     border: solid groove 4px silver;
 }
 
-img{
-    width: 300px;
-    height: 450px; 
-}
-
 img.zoom {
     transition: transform .2s;
+    width: 300px;
+    height: 450px; 
 }
 
 img.zoom:hover {
@@ -142,18 +139,77 @@ p.bio {
 
 .team {
     display: flex;
-    background-color: blanchedalmond;
+    flex-wrap: wrap;
+    background-color: ghostwhite;
     margin-top: 30 px;
 }
 
-div.teambio {
+div.teampic {
+    display: block;
     flex: 1 1 0;
-    max-width: 750px;
-    margin: 0 auto;
-    margin-bottom: 30px;
 }
 
 img.teampic {
     flex: 1 1 0;
-    min-width: 900px;
+    margin:  auto;
+    max-width: 850px;
+    min-width: 250px;
+    border: ridge 10px silver; 
+}
+
+h2.teamBio, h3.teambio {
+    padding: 0 20px;
+}
+
+.pBio {
+    flex: 1 1 0;
+    min-width: 350px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 20px ;
+}
+
+div.teamBio {
+    border: ridge 15px silver;
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: ghostwhite;
+}
+
+.contactForm {
+    flex: 1 1 0;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.contactMap { 
+    flex: 1 1 0;
+	max-width: 600px; 
+	height: 400px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+iframe.map {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+input {
+    display: flex;
+    border: thin 4px;
+    margin: 0 auto;
+    
+}
+
+textarea {
+    display: flex;
+    border: thin 4px;
+    margin: 0 auto;
 }

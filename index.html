@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
     <!-- Import Leaflet JS Library -->
     <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
+
 
 
 </head>
@@ -74,24 +77,49 @@
             <div class="teamBio">
                 <h2 class="teamBio">Biographie de l'équipe</h2>
                 <h3 class="teambio">Origines</h3>
-                <p>Exposés à une dose massive de rayons cosmiques lors d'une mission spatiale, le scientifique Reed Richards et ses compagnons, sa fiancée Susan "Sue" Storm, le frère de celle-ci Johnny Storm et son ami Benjamin « Ben » Grimm acquièrent des pouvoirs surhumains. Ils deviennent respectivement Mr Fantastic, Invisible Girl (puis Invisible Woman), la Torche humaine (Human Torch) et la Chose (The « Thing »). Sous le nom des Quatre Fantastiques, les quatre amis luttent contre des super-vilains extraterrestres ou provenant d'autres dimensions qui menacent la Terre.</p>
+                <p class="pBio">Exposés à une dose massive de rayons cosmiques lors d'une mission spatiale, le scientifique Reed Richards et ses compagnons, sa fiancée Susan "Sue" Storm, le frère de celle-ci Johnny Storm et son ami Benjamin « Ben » Grimm acquièrent des pouvoirs surhumains. Ils deviennent respectivement Mr Fantastic, Invisible Girl (puis Invisible Woman), la Torche humaine (Human Torch) et la Chose (The « Thing »). Sous le nom des Quatre Fantastiques, les quatre amis luttent contre des super-vilains extraterrestres ou provenant d'autres dimensions qui menacent la Terre.</p>
                 <h3 class="teambio">Civil War</h3>
-                <p>À la suite des évènements du crossover Civil War, les Quatre Fantastiques sont déchirés : Invisible Woman et son
+                <p class="pBio">À la suite des évènements du crossover Civil War, les Quatre Fantastiques sont déchirés : Invisible Woman et son
                 frère Johnny Storm rejoignent les Secret Avengers de Captain America, tandis que Mr Fantastic rejoint les partisans de la loi d'enregistrement des être surhumains défendue par Iron Man. La Chose, de son côté, quitte les États-Unis pour la France.<br>Au terme de Civil War, l'équipe est constituée de la Torche humaine, la Chose, Tornade et Black Panther.
                 </p>
                 <h3 class="teambio">Future Foundation</h3>
-                <p>La série Fantastic Four s'achève au #588 avec la mort de la Torche humaine. Le héros Spider-Man intègre alors l'équipe, qui est renommée (ainsi que la série) « Future  Foundation » (FF, la Fondation du futur), reprenant les initiales de "Fantastic Four". Dans un hologramme-testament, la Torche humaine indique comme dernière volonté le souhait d'intégrer Spider-Man à la famille. Cette décision s'explique par la relation fraternelle qu'ils entretenaient tous les deux.</p>
+                <p class="pBio">La série Fantastic Four s'achève au #588 avec la mort de la Torche humaine. Le héros Spider-Man intègre alors l'équipe, qui est renommée (ainsi que la série) "Future  Foundation" (FF, la Fondation du futur), reprenant les initiales de "Fantastic Four". Dans un hologramme-testament, la Torche humaine indique comme dernière volonté le souhait d'intégrer Spider-Man à la famille. Cette décision s'explique par la relation fraternelle qu'ils entretenaient tous les deux.</p>
             </div>
             <div class="teampic"><img class="teampic" src="/assets/img/fantastic-four-team.jpg" alt="F4-team-pic"></div>
 
         </div>
         <div class="contact">
-            <div class="contactMap"></div>
-            <div class="contactForm"></div>
+            <div class="contactMap"><iframe class="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-73.9846158027649%2C40.74639537588834%2C-73.97716999053956%2C40.76056950008487&amp;layer=mapnik&amp;marker=40.75348281570377%2C-73.98088216781616"
+                style="border: 1px solid black"></iframe><br /><small><a
+                    href="https://www.openstreetmap.org/?mlat=40.7535&amp;mlon=-73.9809#map=16/40.7535/-73.9809">Afficher une carte
+                    plus grande</a></small></div>
+            <div class="contactForm">
+               <form action="#" method="get">
+                   <fieldset>
+
+                   <legend>Nous contacter</legend>
+                   <legend>"*"<strong>Obligatoire</strong></legend><br>
+                   <input type="text" name="firstnameInput" id="firstnameInput" placeholder="Veuillez saisir votre prénom" maxlength="50"><br>
+                   <input type="text" name="lastnameInput" id="lastnameInput" placeholder="Veuillez saisir votre nom" maxlength="25"><br>
+
+                   </fieldset>
+
+                   <fieldset>
+
+                    <legend>Votre Message</legend>
+
+                    <textarea name="messageInput" id="messageInput" cols="60" rows="20"></textarea>
+                    <br>
+                    <button type="submit">Valider</button>
+                   </fieldset>
+               </form>
+            </div>
 
         </div>
 
     </div>
+    <script src="/index.js"></script>
 
 </body>
 
