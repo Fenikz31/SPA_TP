@@ -185,6 +185,7 @@ div.teamBio {
     flex: 1 1 0;
     margin: 0 auto;
     max-width: 50%;
+    padding-bottom: 5px;
 }
 
 .contactMap { 
@@ -193,6 +194,10 @@ div.teamBio {
 	height: 400px;
 	margin: 0 auto;
 	border-radius: 5px;
+}
+
+.findUs {
+    text-align: center;
 }
 
 iframe.map {
@@ -212,4 +217,13 @@ textarea {
     display: flex;
     border: thin 4px;
     margin: 0 auto;
+}
+
+.footer-bg {
+    padding: 20px;
+    border-top:  inset 1px grey;
+    bottom: 0;
+    position: relative;
+    background-color: ghostwhite;
+    text-align: center;
 }
